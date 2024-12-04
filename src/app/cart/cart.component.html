@@ -1,1 +1,33 @@
-<p>cart works!</p>
+<div class="cart-container">
+    <h2>ADDED TO YOUR CART</h2>
+    <div class="product-details">
+      <div class="product-title">
+        <h3>ANTHELIOS UVMUNE 400 INVISIBLE FLUID SUNSCREEN SPF50+</h3>
+        <p>50 ml</p>
+      </div>
+      <div class="subscription">
+        <label for="shipping-frequency">Shipping Every</label>
+        <div class="quantity-selector">
+          <button (click)="decreaseQuantity()">-</button>
+          <input type="number" id="shipping-frequency" [(ngModel)]="shippingFrequency" />
+          <button (click)="increaseQuantity()">+</button>
+        </div>
+      </div>s
+      <div class="price">
+        <p class="original-price">€16.90</p>
+        <p class="discounted-price">€13.52/month</p>
+      </div>
+      <button class="subscribe-button">SUBSCRIBE</button>
+    </div>
+    <button class="continue-shopping">CONTINUE SHOPPING</button>
+    <div class="benefits">
+      <ul>
+        <li>✅ Free delivery</li>
+        <li>✅ Free Personalized Samples every month</li>
+      </ul>
+      <p class="extra-discount">
+        GET 5% MORE ON YOUR SUBSCRIPTION FOR EACH PRODUCT ADDED TO THE CART
+      </p>
+    </div>
+  </div>
+  
