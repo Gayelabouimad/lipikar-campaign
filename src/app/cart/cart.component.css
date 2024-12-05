@@ -1,3 +1,10 @@
+.cart-container {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
 .heading-congrats {
   border: 1px solid #007bff;
   background-color: #007bffa3;
@@ -5,102 +12,83 @@
   padding: 15px;
 }
 
-.cart-container {
-    font-family: Arial, sans-serif;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-  }
+.product-details {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2em;
+}
 
-  .product {
-    display: flex;
-    flex-direction: row;
-  }
+.product {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.product-title h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.product-title p {
+  font-size: 14px;
+  color: gray;
+}
+
+.product-quantity p {
+  font-size: 14px;
+  color: gray;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;  
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.price-title {
+  font-size: 14px;
+  color: gray;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discounted-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
   
-  .product-details {
-    margin: 20px 0;
-  }
-  
-  .product-title h3 {
-    font-size: 16px;
-    margin: 0;
-  }
-  
-  .product-title p {
-    font-size: 14px;
-    color: gray;
-  }
-  
-  .subscription {
-    margin: 10px 0;
-  }
-  
-  .quantity-selector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .quantity-selector button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-  }
-  
-  .quantity-selector input {
-    width: 50px;
-    text-align: center;
-    border: 1px solid #ccc;
-  }
-  
-  .price {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 10px;
-  }
-  
-  .original-price {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
-  .discounted-price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #27ae60;
-  }
-  
-  .subscribe-button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .continue-shopping {
-    background-color: transparent;
-    border: none;
-    color: #007bff;
-    text-decoration: underline;
-    cursor: pointer;
-    margin: 20px 0;
-  }
-  
-  .benefits ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .benefits li {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  .extra-discount {
-    font-size: 12px;
-    color: gray;
-  }
-  
+.subscribe-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.extra-discount {
+  font-size: 12px;
+  color: gray;
+}

@@ -1,9 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-
-import {MatSelectModule} from '@angular/material/select';
 
 @Component({
   selector: 'app-cart',
@@ -13,5 +9,16 @@ import {MatSelectModule} from '@angular/material/select';
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
+  quantity = 1;
+
+  increaseQuantity() {
+    this.quantity++;
+  }
+
+  decreaseQuantity() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
+  }
 
 }
