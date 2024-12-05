@@ -1,24 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
+import {MatSelectModule} from '@angular/material/select';
+
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, RouterOutlet, FormsModule ],
+  imports: [ CommonModule ],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
-  shippingFrequency: number = 1;
 
-  increaseQuantity() {
-    this.shippingFrequency++;
-  }
-
-  decreaseQuantity() {
-    if (this.shippingFrequency > 1) {
-      this.shippingFrequency--;
-    }
-  }
 }
